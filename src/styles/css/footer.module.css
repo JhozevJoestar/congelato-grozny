@@ -1,0 +1,310 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+::placeholder {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.footer_container {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #3f4e65;
+}
+.footer_container .footer_container_menu {
+  width: 1329px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 71px 50px 0px 50px;
+}
+.footer_container .footer_container_menu .container_one_menu {
+  width: auto;
+  height: 313px;
+  margin-bottom: 70px;
+}
+.footer_container .footer_container_menu .container_one_menu .footer_sultan_logo {
+  width: 156px;
+  height: 66px;
+}
+.footer_container .footer_container_menu .container_one_menu .first_menu_text {
+  width: 320px;
+  height: 96px;
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .first_input_title {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 45px;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .first_input_container {
+  margin-top: 14px;
+}
+.footer_container .footer_container_menu .container_one_menu .first_input_container input {
+  width: 282px;
+  height: 59px;
+  padding: 13px 10px 13px 20px;
+  background: #ffffff;
+  border-radius: 36px;
+}
+.footer_container .footer_container_menu .container_one_menu .first_input_container img {
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  margin: 10px 0px 0px -49px;
+}
+.footer_container .footer_container_menu .container_one_menu ul li:first-child {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.footer_container .footer_container_menu .container_one_menu ul li {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .fourth_menu_title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .fourth_pricelist {
+  margin-top: 25px;
+}
+.footer_container .footer_container_menu .container_one_menu .fourth_pricelist button {
+  width: 195px;
+  height: 59px;
+  background: #ffc85e;
+  border-radius: 79px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_container .footer_container_menu .container_one_menu .fourth_pricelist button img {
+  width: 15px;
+  height: 15px;
+  margin-left: 12px;
+}
+.footer_container .footer_container_menu .container_one_menu .fourth_contact_list {
+  width: 163px;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_container .footer_container_menu .container_one_menu .fourth_contact_list img {
+  width: 39px;
+  height: 39px;
+  margin: 15px 10px 0px 0px;
+}
+.footer_container .footer_container_menu .container_one_menu .fifth_menu_title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .fifth_menu_contact {
+  height: 64px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .fifth_menu_contact span {
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .fifth_menu_contact p {
+  font-weight: 400;
+  font-size: 10px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .fifth_menu_mail {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.footer_container .footer_container_menu .container_one_menu .fifth_menu_mail span {
+  font-weight: 300;
+  font-size: 12px;
+}
+.footer_container .footer_container_menu .container_one_menu .fifth_menu_banks {
+  margin-top: 25px;
+}
+.footer_container .footer_container_menu .container_one_menu .fifth_menu_banks img {
+  width: 61px;
+  height: 39px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1439px) {
+  .footer_container .footer_container_menu {
+    width: 950px;
+  }
+}
+@media (max-width: 1023px) {
+  .footer_container .footer_container_menu {
+    width: 750px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_title {
+    margin-left: -400px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_contact {
+    margin-left: -400px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_mail {
+    margin-left: -400px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_banks {
+    margin-left: -400px;
+  }
+}
+@media (max-width: 767px) {
+  .footer_container .footer_container_menu {
+    width: 425px;
+    margin: 30px 30px 0px 30px;
+  }
+  .footer_container .footer_container_menu .container_one_menu {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .first_input_title {
+    margin-top: 20px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fourth_menu_title {
+    display: none;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fourth_pricelist {
+    position: absolute;
+    margin: -303px 0px 0px -170px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fourth_pricelist button {
+    width: 179px;
+    height: 50px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fourth_contact_list {
+    position: absolute;
+    margin: 310px 0px 0px -180px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_title {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_contact {
+    margin-left: 0px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_mail {
+    margin-left: 0px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_banks {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 424px) {
+  .footer_container .footer_container_menu {
+    width: 320px;
+    margin-top: 0px;
+    padding: 15px;
+  }
+  .footer_container .footer_container_menu .container_one_menu {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .footer_sultan_logo {
+    width: 97px;
+    height: 41px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .first_menu_text {
+    width: 290px;
+    height: 54px;
+    font-size: 12px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .first_input_title {
+    margin-top: 20px;
+  }
+  .footer_container .footer_container_menu .container_one_menu ul li:first-child {
+    width: 144px;
+  }
+  .footer_container .footer_container_menu .container_one_menu ul li {
+    font-size: 12px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fourth_pricelist {
+    position: absolute;
+    margin: -246px 0px 0px -150px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fourth_pricelist button {
+    width: 149px;
+    height: 40px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fourth_contact_list {
+    position: absolute;
+    width: 123px;
+    margin: 260px 0px 0px -120px;
+  }
+  .footer_container .footer_container_menu .container_one_menu .fifth_menu_title {
+    margin-left: 0px;
+    margin-top: -40px;
+  }
+}
+
+/*# sourceMappingURL=footer.module.css.map */

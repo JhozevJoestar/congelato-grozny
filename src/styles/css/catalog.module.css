@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+::placeholder {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.main_container {
+  width: 1370px;
+  height: 3238px;
+  margin: 0px auto;
+}
+.main_container .bread_crumbs {
+  display: flex;
+  margin-top: 45px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #3f4e65;
+}
+.main_container .bread_crumbs hr {
+  width: 0px;
+  height: 16px;
+  border: 1px dashed #3f4e65;
+  opacity: 0.3;
+  margin-left: 10px;
+}
+.main_container .bread_crumbs p {
+  font-weight: 300;
+  font-size: 14px;
+  margin-left: 10px;
+  opacity: 0.5;
+  color: #3f4e65;
+}
+.main_container .catalog_title {
+  font-weight: 500;
+  font-size: 40px;
+  color: #111111;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_container .catalog_title .catalog_title_sorting {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown {
+  height: 20px;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3f4e65;
+  cursor: pointer;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown img {
+  width: 7px;
+  height: 7px;
+  margin: 9px 0px 0px 5px;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown p {
+  color: #111111;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  text-decoration: none;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown p:hover {
+  color: #ffffff;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown ul {
+  list-style: none;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown ul li {
+  float: left;
+  position: relative;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown ul li ul {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  width: 150px;
+  background-color: #bdbdbd;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown ul li ul li {
+  float: none;
+}
+.main_container .catalog_title .catalog_title_sorting .catalog_title_dropdown ul li:hover ul {
+  display: block;
+}
+
+/*# sourceMappingURL=catalog.module.css.map */

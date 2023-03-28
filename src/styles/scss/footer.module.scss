@@ -1,0 +1,323 @@
+// Обнуление
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+}
+img {
+  vertical-align: top;
+}
+::placeholder {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+// Основной код
+
+.footer_container {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #3f4e65;
+  .footer_container_menu {
+    width: 1329px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 71px 50px 0px 50px;
+    .container_one_menu {
+      width: auto;
+      height: 313px;
+      margin-bottom: 70px;
+      .footer_sultan_logo {
+        width: 156px;
+        height: 66px;
+      }
+      .first_menu_text {
+        width: 320px;
+        height: 96px;
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #ffffff;
+      }
+      .first_input_title {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 45px;
+        color: #ffffff;
+      }
+      .first_input_container {
+        margin-top: 14px;
+        input {
+          width: 282px;
+          height: 59px;
+          padding: 13px 10px 13px 20px;
+          background: #ffffff;
+          border-radius: 36px;
+        }
+        img {
+          position: absolute;
+          width: 39px;
+          height: 39px;
+          margin: 10px 0px 0px -49px;
+        }
+      }
+      ul {
+        li:first-child {
+          font-weight: 600;
+          font-size: 20px;
+          color: #ffffff;
+          margin-bottom: 25px;
+        }
+        li {
+          margin-bottom: 20px;
+          font-weight: 400;
+          font-size: 14px;
+          color: #ffffff;
+        }
+      }
+      .fourth_menu_title {
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff;
+      }
+      .fourth_pricelist {
+        margin-top: 25px;
+        button {
+          width: 195px;
+          height: 59px;
+          background: #ffc85e;
+          border-radius: 79px;
+          font-weight: 700;
+          font-size: 14px;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 15px;
+            height: 15px;
+            margin-left: 12px;
+          }
+        }
+      }
+      .fourth_contact_list {
+        width: 163px;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 20px;
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        img {
+          width: 39px;
+          height: 39px;
+          margin: 15px 10px 0px 0px;
+        }
+      }
+      .fifth_menu_title {
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff;
+      }
+      .fifth_menu_contact {
+        height: 64px;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 14px;
+        color: #ffffff;
+        span {
+          font-weight: 300;
+          font-size: 12px;
+          color: #ffffff;
+        }
+        p {
+          font-weight: 400;
+          font-size: 10px;
+          text-decoration-line: underline;
+          color: #ffffff;
+        }
+      }
+      .fifth_menu_mail {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff;
+        span {
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+      .fifth_menu_banks {
+        margin-top: 25px;
+        img {
+          width: 61px;
+          height: 39px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .footer_container {
+    .footer_container_menu {
+      width: 950px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer_container {
+    .footer_container_menu {
+      width: 750px;
+      .container_one_menu {
+        .fifth_menu_title {
+          margin-left: -400px;
+        }
+        .fifth_menu_contact {
+          margin-left: -400px;
+        }
+        .fifth_menu_mail {
+          margin-left: -400px;
+        }
+        .fifth_menu_banks {
+          margin-left: -400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer_container {
+    .footer_container_menu {
+      width: 425px;
+      margin: 30px 30px 0px 30px;
+      .container_one_menu {
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+        .first_input_title {
+          margin-top: 20px;
+        }
+        .fourth_menu_title {
+          display: none;
+        }
+        .fourth_pricelist {
+          position: absolute;
+          margin: -303px 0px 0px -170px;
+          button {
+            width: 179px;
+            height: 50px;
+          }
+        }
+        .fourth_contact_list {
+          position: absolute;
+          margin: 310px 0px 0px -180px;
+        }
+        .fifth_menu_title {
+          margin-left: 0px;
+          margin-top: 0px;
+        }
+        .fifth_menu_contact {
+          margin-left: 0px;
+        }
+        .fifth_menu_mail {
+          margin-left: 0px;
+        }
+        .fifth_menu_banks {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  .footer_container {
+    .footer_container_menu {
+      width: 320px;
+      margin-top: 0px;
+      padding: 15px;
+      .container_one_menu {
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+        .footer_sultan_logo {
+          width: 97px;
+          height: 41px;
+        }
+        .first_menu_text {
+          width: 290px;
+          height: 54px;
+          font-size: 12px;
+        }
+        .first_input_title {
+          margin-top: 20px;
+        }
+        ul {
+          li:first-child {
+            width: 144px;
+          }
+          li {
+            font-size: 12px;
+          }
+        }
+        .fourth_pricelist {
+          position: absolute;
+          margin: -246px 0px 0px -150px;
+          button {
+            width: 149px;
+            height: 40px;
+          }
+        }
+        .fourth_contact_list {
+          position: absolute;
+          width: 123px;
+          margin: 260px 0px 0px -120px;
+        }
+        .fifth_menu_title {
+          margin-left: 0px;
+          margin-top: -40px;
+        }
+      }
+    }
+  }
+}
