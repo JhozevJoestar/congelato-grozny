@@ -1,7 +1,6 @@
 import React, { FC, useState } from "react";
 import style from "../styles/css/catalog.module.css";
 import Sort_Icon from "../images/catalog/Sort_Icon.png";
-import Dropdown from "react-multilevel-dropdown";
 
 const Catalog: FC = () => {
     const [sorting, setSorting] = useState('По названию')

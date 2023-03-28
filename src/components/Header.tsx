@@ -11,6 +11,7 @@ import Cart_Icon from "../images/header/Cart_Icon.png";
 import Menu_Icon from "../images/header/Menu_Icon.png";
 import Mobile_Catalog from "../images/header/Mobile_Catalog.png";
 import Mobile_Search from "../images/header/Mobile_Search.png";
+import { Link } from "react-router-dom";
 
 const Header: FC = () => {
   return (
@@ -56,7 +57,9 @@ const Header: FC = () => {
             <img src={Mobile_Search} alt="" />
             Поиск
           </div>
-          <img src={Logo_Sultan} alt="" className={style.sultan_image} />
+          <Link to="/">
+            <img src={Logo_Sultan} alt="" className={style.sultan_image} />
+          </Link>
           <button>
             Каталог <img src={Button_Frame} alt="" />
           </button>
@@ -74,7 +77,9 @@ const Header: FC = () => {
           </button>
           <hr />
           <div className={style.cart_container}>
-            <img src={Cart_Icon} alt="" />
+            <Link to="/basket">
+              <img src={Cart_Icon} alt="" />
+            </Link>
             <button>0</button>
           </div>
           <div className={style.totalprice_container}>
