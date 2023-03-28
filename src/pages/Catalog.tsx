@@ -16,7 +16,7 @@ const Catalog: FC = () => {
         <p>Косметика и гигиена</p>
       </div>
       <div className={style.catalog_title}>
-        Косметика и гигиена
+        Косметика 
         <div className={style.catalog_title_sorting}>
           Сортировка:
           <div className={style.catalog_title_dropdown}>
