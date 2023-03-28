@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/project-task/static/css/main.2a5d4b56.css",
-    "main.js": "/project-task/static/js/main.993ebc1b.js",
+    "main.js": "/project-task/static/js/main.32618a85.js",
     "static/media/Logo_Sultan.png": "/project-task/static/media/Logo_Sultan.ccb8490903edae228968.png",
     "index.html": "/project-task/index.html",
     "main.2a5d4b56.css.map": "/project-task/static/css/main.2a5d4b56.css.map",
-    "main.993ebc1b.js.map": "/project-task/static/js/main.993ebc1b.js.map"
+    "main.32618a85.js.map": "/project-task/static/js/main.32618a85.js.map"
   },
   "entrypoints": [
     "static/css/main.2a5d4b56.css",
-    "static/js/main.993ebc1b.js"
+    "static/js/main.32618a85.js"
   ]
 }
