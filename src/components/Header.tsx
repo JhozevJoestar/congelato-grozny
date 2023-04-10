@@ -14,7 +14,6 @@ import Mobile_Search from "../images/header/Mobile_Search.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
-import { IProduct } from "./Products";
 
 const Header: FC = () => {
   const counter = useSelector((state: RootState) => state.cart.counter);
@@ -62,7 +61,7 @@ const Header: FC = () => {
             Поиск
           </div>
           <Link to="/">
-            <img src={Logo_Sultan} alt="" className={style.sultan_image} data-testid="catalog"/>
+            <img src={Logo_Sultan} alt="" className={style.sultan_image} data-testid="catalog" id="toggle"/>
           </Link>
           <Link to="/">
             <button style={{ cursor: "pointer" }} >
@@ -86,7 +85,7 @@ const Header: FC = () => {
             <Link to="/basket">
               <img src={Cart_Icon} alt="" data-testid="basket"/>
             </Link>
-            <button>{counter}</button>
+            <button data-testid="counter">{counter}</button>
           </div>
           <div className={style.totalprice_container}>
             <p>Корзина</p>

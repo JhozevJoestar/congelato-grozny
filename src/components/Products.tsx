@@ -29,7 +29,7 @@ export enum Type {
 export const products: IProduct[] = [
   {
     url: "https://ir.ozone.ru/s3/multimedia-y/wc250/6359590462.jpg",
-    name: "Крем для рук Кокосовое масло и миндальное молочко",
+    name: "Крем для рук Калина с Алоэ",
     volume: Volume.VOLUME,
     size: "50 мл",
     barcode: 46040490975540,
@@ -345,4 +345,4 @@ export const products: IProduct[] = [
 ];
 
 let json = JSON.stringify(products);
-console.log(json);
+// console.log(json);

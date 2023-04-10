@@ -95,7 +95,7 @@ const ProductPage: FC = () => {
                             <button>-</button>
                             }
                           <div>{el.counter}</div>
-                          <button onClick={() => handleIncrement(el)}>+</button>
+                          <button onClick={() => handleIncrement(el)} data-testid="counter_increment">+</button>
                         </div>
                         {cart.cart.find(
                           (item) => item.barcode === el.barcode
@@ -105,7 +105,7 @@ const ProductPage: FC = () => {
                             <img src={Cart_Icon} alt="" />
                           </button>
                         ) : (
-                          <button onClick={() => handleAddToCart(el)}>
+                          <button onClick={() => handleAddToCart(el)} data-testid={el.barcode}>
                             В корзину
                             <img src={Cart_Icon} alt="" />
                           </button>

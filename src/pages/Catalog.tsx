@@ -391,7 +391,6 @@ const Catalog: FC = () => {
                     <div
                       className={style.options_category}
                       onClick={() => categoriesFilter(el.name)}
-                      key={el.id}
                     >
                       {el.name}
                     </div>
@@ -445,6 +444,7 @@ const Catalog: FC = () => {
                     <button
                       onClickCapture={() => addToCart(el)}
                       style={{ cursor: "pointer" }}
+                      data-testid={el.name}
                     >
                       В КОРЗИНУ
                       <img src={Cart_Icon} alt="" />
