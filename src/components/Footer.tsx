@@ -7,6 +7,7 @@ import WhatsApp_Icon from "../images/footer/WhatsApp_Icon.png";
 import Telegram_Icon from "../images/footer/Telegram_Icon.png";
 import Visa from "../images/footer/Visa.png";
 import MasterCard from "../images/footer/MasterCard.png";
+import { Link } from "react-router-dom";
 
 const Footer: FC = () => {
   return (
@@ -18,6 +19,8 @@ const Footer: FC = () => {
             Компания «Султан» — снабжаем розничные магазины товарами "под ключ"
             в Кокчетаве и Акмолинской области
           </div>
+          <Link to="/admin">Админка</Link>
+
           <div className={style.first_input_title}>
             Подпишись на скидки и акции
           </div>

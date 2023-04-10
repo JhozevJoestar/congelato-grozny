@@ -1,0 +1,348 @@
+export interface IProduct {
+  url: string;
+  name: string;
+  volume: string;
+  size: string;
+  barcode: number;
+  manufacturer: string;
+  brand: string;
+  desription: string;
+  price: number;
+  type: string[];
+  counter?: number;
+  writable: boolean
+}
+
+export enum Volume {
+  WEIGHT = "weight",
+  VOLUME = "volume",
+}
+
+export enum Type {
+  HAND = "Уход за лицом",
+  FACE = "Уход за руками",
+  BODY = "Уход за телом",
+  HAIR = "Уход за волосами",
+  FOOT = "Уход за ногами",
+}
+
+export const products: IProduct[] = [
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-y/wc250/6359590462.jpg",
+    name: "Крем для рук Кокосовое масло и миндальное молочко",
+    volume: Volume.VOLUME,
+    size: "50 мл",
+    barcode: 46040490975540,
+    manufacturer: "Калина",
+    brand: "Бархатные Ручки",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 1000,
+    type: [Type.HAND, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Увлажняющий крем для лица с витаминами",
+    volume: Volume.WEIGHT,
+    size: "100 г",
+    barcode: 560404904397540,
+    manufacturer: "Unilever",
+    brand: "Dove",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 200,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-i/wc250/6416259162.jpg",
+    name: "Крем для лица и рук белита",
+    volume: Volume.VOLUME,
+    size: "40 мл",
+    barcode: 66040459097540,
+    manufacturer: "BELITA",
+    brand: "BELITA",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 170,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-y/wc250/6359590462.jpg",
+    name: "Крем для рук Кокосовое масло и миндальное молочко",
+    volume: Volume.WEIGHT,
+    size: "1000 г",
+    barcode: 46040449097541,
+    manufacturer: "Калина",
+    brand: "Бархатные Ручки",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 300,
+    type: [Type.HAND, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Пена после бритья NIVEA",
+    volume: Volume.VOLUME,
+    size: "40 мл",
+    barcode: 560406349097541,
+    manufacturer: "NIVEA",
+    brand: "NIVEA",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 4000,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-i/wc250/6416259162.jpg",
+    name: "Шампунь для волос NIVEA",
+    volume: Volume.WEIGHT,
+    size: "100 г",
+    barcode: 66040419097541,
+    manufacturer: "NIVEA",
+    brand: "NIVEA",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 40.5,
+    type: [Type.HAIR, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-y/wc250/6359590462.jpg",
+    name: "Крем для рук Кокосовое масло и миндальное молочко",
+    volume: Volume.VOLUME,
+    size: "10 мл",
+    barcode: 460404549097542,
+    manufacturer: "Калина",
+    brand: "Бархатные Ручки",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 10,
+    type: [Type.HAND, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Увлажняющий крем для лица с витаминами",
+    volume: Volume.WEIGHT,
+    size: "100 г",
+    barcode: 5604042439097542,
+    manufacturer: "Unilever",
+    brand: "Dove",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 90,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-i/wc250/6416259162.jpg",
+    name: "Крем для лица и рук белита",
+    volume: Volume.VOLUME,
+    size: "50мл",
+    barcode: 660404249097542,
+    manufacturer: "BELITA",
+    brand: "BELITA",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 10,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-y/wc250/6359590462.jpg",
+    name: "Крем для рук Кокосовое масло и миндальное молочко",
+    volume: Volume.WEIGHT,
+    size: "400г",
+    barcode: 46040429097543,
+    manufacturer: "Калина",
+    brand: "Бархатные Ручки",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 450,
+    type: [Type.HAND, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Увлажняющий крем для лица с витаминами",
+    volume: Volume.VOLUME,
+    size: "500 мл",
+    barcode: 560404549097543,
+    manufacturer: "Unilever",
+    brand: "Dove",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 150,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-i/wc250/6416259162.jpg",
+    name: "Крем для лица и рук белита",
+    volume: Volume.WEIGHT,
+    size: "1000 г",
+    barcode: 66040491097543,
+    manufacturer: "BELITA",
+    brand: "BELITA",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 100,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-y/wc250/6359590462.jpg",
+    name: "Крем для лица и тела",
+    volume: Volume.VOLUME,
+    size: "50 мл",
+    barcode: 46040449097544,
+    manufacturer: "Калина",
+    brand: "Бархатные Ручки",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 900,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Шамппунь для волос",
+    volume: Volume.WEIGHT,
+    size: "100 г",
+    barcode: 560404429097544,
+    manufacturer: "Unilever",
+    brand: "Dove",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 600,
+    type: [Type.HAIR, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-i/wc250/6416259162.jpg",
+    name: "Крем для лица и рук белита",
+    volume: Volume.VOLUME,
+    size: "30 мл",
+    barcode: 6604047469097544,
+    manufacturer: "BELITA",
+    brand: "BELITA",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 560,
+    type: [Type.FACE, Type.HAND, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-y/wc250/6359590462.jpg",
+    name: "Крем для рук Кокосовое масло и миндальное молочко",
+    volume: Volume.WEIGHT,
+    size: "100 г",
+    barcode: 460406349097545,
+    manufacturer: "Калина",
+    brand: "Бархатные Ручки",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 189,
+    type: [Type.HAND, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Увлажняющий крем для  ног",
+    volume: Volume.VOLUME,
+    size: "20 мл",
+    barcode: 560404529097545,
+    manufacturer: "NIVEA",
+    brand: "Dove",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 199,
+    type: [Type.FOOT, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Мыло для рук и Лица MILANA",
+    volume: Volume.VOLUME,
+    size: "20 мл",
+    barcode: 560403249597545,
+    manufacturer: "MILANA",
+    brand: "MILANA",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 199,
+    type: [Type.HAND, Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Шампунь BASKES",
+    volume: Volume.VOLUME,
+    size: "20 мл",
+    barcode: 560401249017545,
+    manufacturer: "BASKES",
+    brand: "BASKES",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 199,
+    type: [Type.HAIR, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Увлажняющий крем для лица с витаминами",
+    volume: Volume.VOLUME,
+    size: "20 мл",
+    barcode: 560424349097545,
+    manufacturer: "Unilever",
+    brand: "Dove",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 199,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+  {
+    url: "https://ir.ozone.ru/s3/multimedia-r/wc250/6339168843.jpg",
+    name: "Увлажняющий крем для лица с витаминами",
+    volume: Volume.VOLUME,
+    size: "20 мл",
+    barcode: 560404902137545,
+    manufacturer: "Unilever",
+    brand: "Dove",
+    desription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    price: 199,
+    type: [Type.FACE, Type.BODY],
+    counter: 0,
+    writable: true,
+  },
+];
+
+let json = JSON.stringify(products);
+console.log(json);

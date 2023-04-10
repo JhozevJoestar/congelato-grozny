@@ -12,8 +12,12 @@ import Menu_Icon from "../images/header/Menu_Icon.png";
 import Mobile_Catalog from "../images/header/Mobile_Catalog.png";
 import Mobile_Search from "../images/header/Mobile_Search.png";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+import { IProduct } from "./Products";
 
 const Header: FC = () => {
+  const counter = useSelector((state: RootState) => state.cart.counter);
   return (
     <div className={style.header_container}>
       <div className={style.firstline_container}>
@@ -53,16 +57,18 @@ const Header: FC = () => {
             <img src={Mobile_Catalog} alt="" />
             Каталог
           </div>
-          <div className={style.mobile_menu}>
+          <div className={style.mobile_menu} id={style.mobile_second}>
             <img src={Mobile_Search} alt="" />
             Поиск
           </div>
           <Link to="/">
-            <img src={Logo_Sultan} alt="" className={style.sultan_image} />
+            <img src={Logo_Sultan} alt="" className={style.sultan_image} data-testid="catalog"/>
           </Link>
-          <button>
-            Каталог <img src={Button_Frame} alt="" />
-          </button>
+          <Link to="/">
+            <button style={{ cursor: "pointer" }} >
+              Каталог <img src={Button_Frame} alt=""/>
+            </button>
+          </Link>
           <input type="text" placeholder="Поиск..." />
           <img src={Input_Search} alt="" className={style.input_image} />
           <div className={style.connect_info_container}>
@@ -78,13 +84,13 @@ const Header: FC = () => {
           <hr />
           <div className={style.cart_container}>
             <Link to="/basket">
-              <img src={Cart_Icon} alt="" />
+              <img src={Cart_Icon} alt="" data-testid="basket"/>
             </Link>
-            <button>0</button>
+            <button>{counter}</button>
           </div>
           <div className={style.totalprice_container}>
             <p>Корзина</p>
-            <span>12 478 ₸ </span>
+            <span>12 478 ₸</span>
           </div>
         </div>
       </div>

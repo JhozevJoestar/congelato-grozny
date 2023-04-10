@@ -237,8 +237,8 @@ img {
           position: absolute;
           display: flex;
           text-align: center;
-          width: 27px;
-          height: 27px;
+          width: auto;
+          height: auto;
           margin: -45px 0px 0px 28px;
           font-weight: 700;
           font-size: 14px;
@@ -347,7 +347,7 @@ img {
           position: absolute;
           width: 120px;
           height: 55px;
-          margin: -170px 0px 0px 295px;
+          margin: -115px 0px 0px 295px;
         }
         button {
           width: 150px;
@@ -375,6 +375,7 @@ img {
 
 @media (max-width: 767px) {
   .header_container {
+    height: 101px;
     .firstline_container {
       .firstline_container_menu {
         width: 420px;
@@ -407,6 +408,9 @@ img {
         height: 40px;
         display: flex;
         justify-content: space-between;
+        #mobile_second {
+          margin-left: 170px;
+        }
         .mobile_menu {
           width: auto;
           font-weight: 600;
@@ -422,7 +426,7 @@ img {
           position: absolute;
           width: 120px;
           height: 55px;
-          margin: -101px 0px 0px 100px;
+          margin: -80px 0px 0px -220px;
         }
         button {
           display: none;
@@ -441,7 +445,7 @@ img {
         }
         .cart_container {
           position: absolute;
-          margin: -101px 0px 0px 310px;
+          margin: -101px 0px 0px 315px;
         }
       }
     }
@@ -459,12 +463,15 @@ img {
       height: 40px;
       .secondline_container_menu {
         width: 240px;
+        #mobile_second {
+          margin-left: 100px;
+        }
         .sultan_image {
-          margin: -101px 0px 0px 50px;
+          margin: -80px 0px 0px -180px;
         }
         .cart_container {
           position: absolute;
-          margin: -101px 0px 0px 210px;
+          margin: -101px 0px 0px 225px;
         }
       }
     }

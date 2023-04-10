@@ -1,0 +1,29 @@
+.container_main {
+    form {
+        display: flex;
+        flex-direction: column;
+            input {
+                width: 300px;
+                height: 40px;
+                border: 1px solid orange;
+            }
+    }
+    button {
+        width: 20px;
+        height: 20px;
+        background-color: orange;
+        margin-left: 10px;
+    }
+    .container_checkbox {
+        margin: 10px 0px 10px 0px;
+        input {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .input_button {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+}
+
